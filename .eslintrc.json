@@ -1,0 +1,4 @@
+{
+  "extends": "next",
+  // "no-unescaped-entities": false
+}
