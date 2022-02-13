@@ -37,7 +37,7 @@ function Search({searchResults}) {
             property="og:description"
             content="Nothing..."
             />
-            <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcBP7AOPEIr54THh17oMzwwfstAfjHvDvdA&usqp=CAU" />
+            <meta property="og:image" content="https://picsum.photos/seed/picsum/536/354" />
         </Head>
         <Header placeholder={`${location} | ${formattedStartDate} - ${formattedEndDate} | ${noOfGuest} guests`} />
 
