@@ -1,4 +1,5 @@
 import { format } from 'date-fns';
+import Head from 'next/head';
 import { useRouter } from 'next/router'
 import React from 'react'
 import Footer from '../components/Footer'
@@ -22,6 +23,22 @@ function Search({searchResults}) {
     ]
   return (
     <div>
+        <Head>
+            <title>Stays!</title>
+            <link rel="icon" href="/favicon.ico" />
+            <meta property="og:url" content="https://airbnb-clone-merjthckq-quyenluong37.vercel.app/" />
+            <meta property="og:type" content="website" />
+            <meta
+                property="og:title"
+                content="I love u <3"
+            />
+            <meta name="twitter:card" content="Twitter card" />
+            <meta
+            property="og:description"
+            content="Nothing..."
+            />
+            <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcBP7AOPEIr54THh17oMzwwfstAfjHvDvdA&usqp=CAU" />
+        </Head>
         <Header placeholder={`${location} | ${formattedStartDate} - ${formattedEndDate} | ${noOfGuest} guests`} />
 
         <main className="py-8 mx-auto max-w-7xl px-8 sm:px-6">
