@@ -12,6 +12,18 @@ export default function Home({ exploreData, cardsData }) {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:url" content="https://airbnb-clone-merjthckq-quyenluong37.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="This is title?"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="Hurray!! Yes Social Media Preview is Working"
+        />
+        <meta property="og:image" content="https://links.papareact.com/0fm" />
       </Head>
 
       <Header placeholder='Start your search' />
