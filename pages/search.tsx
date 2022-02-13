@@ -9,7 +9,7 @@ function Search({searchResults}) {
     console.log('searchResults: ', searchResults);
 
     const router = useRouter();
-    const { location, startDate, endDate, noOfGuest } = router.query;
+    const { location, startDate, endDate, noOfGuest }: any = router.query;
     console.log(router.query);
     const formattedStartDate = format(new Date(startDate), 'dd MMM yy')
     const formattedEndDate = format(new Date(endDate), 'dd MMM yy')
