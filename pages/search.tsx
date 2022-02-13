@@ -11,8 +11,8 @@ function Search({searchResults}) {
     const router = useRouter();
     const { location, startDate, endDate, noOfGuest } = router.query;
     console.log(router.query);
-    const formattedStartDate = format(new Date('22/02/2022'), 'dd MMM yy')
-    const formattedEndDate = format(new Date('12/02/2022'), 'dd MMM yy')
+    const formattedStartDate = format(new Date(startDate), 'dd MMM yy')
+    const formattedEndDate = format(new Date(endDate), 'dd MMM yy')
     const filterList = [
         {type: 'cancel', text: 'Cancellation Flexibility'},
         {type: 'cancel', text: 'Type of place'},
